@@ -1,0 +1,2 @@
+# Desenvolverdor
+função scanner
