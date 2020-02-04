@@ -10,7 +10,7 @@ public class Main {
 	        a = sc.nextInt();
 			b = sc.nextInt();
 			c = sc.nextInt();
-//obs: função do  Math.abs() e transforma negativo em positivo.
+//obs: funÃ§Ã£o do  Math.abs() e transforma negativo em positivo.
 			
 	MaiorAB = (a + b + Math.abs(a - b)) / 2;
 		//MaiorAB = (7+14)+ Math.abs(7-14))/2;
