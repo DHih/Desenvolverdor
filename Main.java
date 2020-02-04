@@ -4,19 +4,33 @@ import java.util.Scanner;
 public class Main {
 
 	public static void main(String[] args) {
-		// TODO Auto-generated method stub
+Locale.setDefault(Locale.US);
+		Scanner sc = new Scanner(System.in);
+		int a;
+		int b;
+		double c;
+		a = sc.nextInt();
+		b = sc.nextInt();
+		c = sc.nextDouble(); 
+		
+		
+		int d;
+	    int e;
+	    double f;
+		
+		d = sc.nextInt();
+		e = sc.nextInt();
+		f = (double) sc.nextDouble();
+		System.out.printf("VALOR A PAGAR: R$ %.2f%n",(e*f)+(b*c));
+		
+		
+		
+		
+		
+		
+		sc.close();
+				
 
-	Locale.setDefault(Locale.US);
-	Scanner sc = new Scanner (System.in);
-	
-	String nome = sc.next();
-	double a = sc.nextDouble();
-	double b = sc.nextDouble();
-	
-	double c = a+b*nome;
-		
-		
-		sc.close;
 	}
 
 }
