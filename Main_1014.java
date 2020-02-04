@@ -15,7 +15,7 @@ Scanner sc = new Scanner(System.in);
 combustivel = sc.nextDouble();
 
 	double pecorrido = distancia/combustivel;
-//obs: a quebra de linha vai depois do km/l devido a isso o %n est· 
+//obs: a quebra de linha vai depois do km/l devido a isso o %n est√° 
 //separado do %.3f
 
 	System.out.printf("%.3f km/l%n",pecorrido);
