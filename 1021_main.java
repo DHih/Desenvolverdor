@@ -14,7 +14,7 @@ public class Main {
 		
 		N = sc.nextDouble();
 		
-		// Vamos multiplicar N por 100 e forÁar a convers„o para int.
+		// Vamos multiplicar N por 100 e for√ßar a convers√£o para int.
 		// Desse modo, por exemplo, 576.73 vai se tornar 57673
 
 		// Vamos tambem somar 0.5 antes de converter, para assegurar 
@@ -28,7 +28,7 @@ public class Main {
 		System.out.println("NOTAS:");
 
 		// como multiplicamos o valor por 100 acima, o valor de cada nota
-		// tambÈm dever· ser multiplicado por 100 a seguir
+		// tamb√©m dever√° ser multiplicado por 100 a seguir
 		
 		nota = 100;
 		quociente = resto / (nota * 100);
@@ -62,7 +62,7 @@ public class Main {
 
 	    System.out.println("MOEDAS:");
 
-	    // o valor de cada moeda dever· ser representado em centavos
+	    // o valor de cada moeda dever√° ser representado em centavos
 	    
 		moeda = 100;
 		quociente = resto / moeda;
