@@ -9,7 +9,7 @@ Locale.setDefault(Locale.US);
 	double nota1 = sc.nextDouble();
 	double nota2 = sc.nextDouble();
 	double resultado = nota1 + nota2;
-	//funÁ„o de if simples na qual est· calculando a nota dos 2 bimestre do aluno.
+	//fun√ß√£o de if simples na qual est√° calculando a nota dos 2 bimestre do aluno.
 	System.out.printf("NOTA FINAL = %.1f%n",resultado);
 	if(resultado < 60.0){
        System.out.println("REPROVADO");	
