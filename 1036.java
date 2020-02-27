@@ -5,9 +5,9 @@ public class Main {
 	public static void main(String[] args) {
 		// TODO Auto-generated method stub
 Scanner sc = new Scanner(System.in);
-//Leia 3 valores de ponto flutuante e efetue o cálculo das raízes da equação de Bhaskara.
-//Se não for possível calcular as raízes, mostre a mensagem correspondente “Impossivel calcular”,
-//caso haja uma divisão por 0 ou raiz de numero negativo.
+//Leia 3 valores de ponto flutuante e efetue o cÃ¡lculo das raÃ­zes da equaÃ§Ã£o de Bhaskara.
+//Se nÃ£o for possÃ­vel calcular as raÃ­zes, mostre a mensagem correspondente â€œImpossivel calcularâ€,
+//caso haja uma divisÃ£o por 0 ou raiz de numero negativo.
 
 double a = sc.nextDouble();
 double b = sc.nextDouble();
