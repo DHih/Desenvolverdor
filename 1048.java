@@ -1,34 +1,41 @@
+  
+import java.util.Locale;
 import java.util.Scanner;
 
+//nao esqueca de mudar o nome da classe para Main
 public class Main {
 
 	public static void main(String[] args) {
-		// TODO Auto-generated method stub
-Scanner sc = new Scanner(System.in);
-double salario = sc.nextDouble();
-double reajuste;
-if(salario < 400.00 || salario == 400.00) {
-	reajuste = salario + (15.0 / 100.0 * salario);
-	System.out.printf("salario %.2f%n",reajuste);
-	System.out.println("reajuste ganho 60.00");
-	System.out.println("Em percentual: 15%");
-	
-}else if(salario < 400.01 || salario == 800.00) {
-	reajuste = salario + (10.0 / 100.0 * salario);
-	System.out.printf("salario %.2f%n",reajuste);
-	System.out.println("reajuste ganho 80.00");
-	System.out.println("Em percentual: 10%");
 
-}else if(salario < 800.01 || salario == 1200.00) {
-	reajuste = salario + (7.0 / 100.0 * salario);
-	System.out.printf("salario %.2f%n",reajuste);
-	System.out.println("reajuste ganho 140.00");
-	System.out.println("Em percentual: 7%");
+		Locale.setDefault(Locale.US);//coloca em cima do scanner para pode troca a virgula pelo ponto.
+		Scanner sc = new Scanner(System.in);
 
-}else {
-	System.out.println("Em percentual: 4%");
-}
-sc.close();
+		double salario = sc.nextDouble();
+		
+		double percentual;
+		if (salario <= 400.0) {
+			percentual = 15.0;
+		}
+		else if (salario <= 800.0) {
+			percentual = 12.0;
+		}
+		else if (salario <= 1200.0) {
+			percentual = 10.0;
+		}
+		else if (salario <= 2000.0) {
+			percentual = 7.0;
+		}
+		else {
+			percentual = 4.0;
+		}
+		
+		double reajuste = salario * percentual / 100.0;//formula para calcular porcentagem
+		double novoSalario = salario + reajuste;
+		
+		System.out.printf("Novo salario: %.2f%n", novoSalario);
+		System.out.printf("Reajuste ganho: %.2f%n", reajuste);
+		System.out.printf("Em percentual: %.0f %%%n", percentual);
+		
+		sc.close();
 	}
-
 }
